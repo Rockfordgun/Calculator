@@ -1,8 +1,14 @@
 function Calculator() {
     
     let answer = document.querySelector ('#answer');
-    let num1 = document.querySelector ('#num1');
-    let num2 = document.querySelector ('#num2');
+    let num1 = Number(document.querySelector ('#num1').value);
+    let num2 = Number(document.querySelector ('#num2').value);
+    
+
+    answer.innerHTML= num1 + num2;
+    console.log(num1, num2)
+
+    /*
     let select = document.querySelector('select');
     let operator = select.options [select.selectedIndex].value;
     var theAnswer;
@@ -21,7 +27,7 @@ function Calculator() {
     }
 
     answer.innerHTML  = theAnswer;
-    
+    */
 
 }
 

@@ -8,8 +8,19 @@ function Calculator() {
     var theAnswer;
 
     if (operator == 'add') {
-        
+        theAnswer = num1 + num2;  
+    } else if (operator == 'minus') {
+        theAnswer = num1 - num2;
+    } else if (operator == 'divide') {
+        theAnswer = num1 / num2;
+    } else if (operator == 'multiply') {
+        theAnswer = num1 * num2;
+    } else {
+        theAnswer = 'Select what you would like to do!'
+
     }
+
+    answer.innerHTML  = theAnswer;
     
 
 }
